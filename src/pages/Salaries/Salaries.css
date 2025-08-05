@@ -1,0 +1,30 @@
+.salaries {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.salaries h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.salaries table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.salaries th,
+.salaries td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.salaries th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.salaries td strong {
+  color: #2e8b57;
+}

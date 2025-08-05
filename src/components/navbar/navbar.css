@@ -1,0 +1,17 @@
+.navbar ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar ul li{
+  padding: 6px 15px;
+  border-radius: 6px;
+  border: 1.6px solid black;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: black;
+}
