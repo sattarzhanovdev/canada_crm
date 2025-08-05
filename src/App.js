@@ -4,7 +4,7 @@ import axios from 'axios';
 import './App.css'
 import { BrowserRouter as Router } from 'react-router-dom';
 
-axios.defaults.baseURL = 'http://127.0.0.1:8000/api'; // Set your API base URL here
+axios.defaults.baseURL = 'https://canadacrm.pythonanywhere.com/api'; // Set your API base URL here
 
 const App = () => (
   <Router>
