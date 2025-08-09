@@ -102,10 +102,10 @@ const OrderList = () => {
 
   return (
     <div className="order-container">
-      <h2 className="order-title">📦 Список заказов — страница {page} из {totalPages}</h2>
+      <h2 className="order-title">📦 List of orders — page {page} of {totalPages}</h2>
 
       {loading ? (
-        <div className="loader">Загрузка...</div>
+        <div className="loader">Loading...</div>
       ) : (
         <>
           <div className="order-table-wrapper">
@@ -114,13 +114,13 @@ const OrderList = () => {
                 <tr>
                   <th>ID</th>
                   <th>Invoice #</th>
-                  <th>Описание</th>
-                  <th>Клиент</th>
-                  <th>Техник</th>
-                  <th>Дата</th>
-                  <th>Адрес</th>
-                  <th>Сумма</th>
-                  <th>Статус</th>
+                  <th>Description</th>
+                  <th>Customer</th>
+                  <th>Assigned</th>
+                  <th>Date</th>
+                  <th>Address</th>
+                  <th>Summa</th>
+                  <th>Status</th>
                 </tr>
               </thead>
               <tbody>
