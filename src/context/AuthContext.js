@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from 'react';
-import { login, fetchMe } from '../api/auth';
+import { login, fetchMe, resfreshToken } from '../api/auth';
 import { useNavigate } from 'react-router-dom';
 
 const AuthContext = createContext();
@@ -12,6 +12,7 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
+      resfreshToken()
       fetchMe().then(res => {
         setUser(res.data)
         if(res.data.role === 'admin'){

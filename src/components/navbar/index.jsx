@@ -17,6 +17,11 @@ const Navbar = () => {
             Salaries
           </Link>
         </li>
+        <li>
+          <Link to={role === 'admin' ? '/admin/jobs' : role === 'manager' ? '/manager/jobs' : '/technician/jobs'}>
+            Jobs
+          </Link>
+        </li>
       </ul>
     </div>
   )

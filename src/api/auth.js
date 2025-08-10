@@ -14,3 +14,12 @@ export const fetchMe = () =>
     localStorage.setItem('token', res.data.access)
     localStorage.setItem('refresh', res.data.refresh)
   }));
+
+export const resfreshToken = () => {
+  return axios.post('/token/refresh/', {refresh: localStorage.getItem('refresh')})
+    .then(res => {
+      localStorage.setItem('token', res.data.access);
+      localStorage.setItem('refresh', res.data.refresh);
+      return res.data;
+    })
+}
